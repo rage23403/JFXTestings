@@ -19,11 +19,13 @@ import javafx.stage.Stage;
  */
 public class JFXTesting extends Application
 {
+    Stage primaryStage;
     BorderPane border;
     boolean sideOpen = false;
     @Override
     public void start(Stage stage)
     {
+        primaryStage = stage;
         // Create a Button or any control item
         Button myButton = new Button("Count");
         
