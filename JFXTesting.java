@@ -58,12 +58,12 @@ public class JFXTesting extends Application
     public void buttonAction(ActionEvent e){
         sideOpen = !sideOpen;
         if(sideOpen){
-            border.resize(border.getWidth()+100,border.getHeight());
-            //border.setRight(new Rectangle(100,500,Color.WHITE));
+            border.setRight(new Rectangle(100,500,Color.WHITE));
+            primaryStage.sizeToScene();
         }
         else{
-            border.resize(border.getWidth()-100,border.getHeight());
             border.setRight(new Rectangle(0,0,Color.WHITE));
+            primaryStage.sizeToScene();
         }
     }
 }
