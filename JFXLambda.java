@@ -23,7 +23,7 @@ import javafx.stage.Stage;
  * in Swing you could just create a new Object of type JFrame.
  * 
  */
-public class LambdaJFX extends Application
+public class JFXLambda extends Application
 {
     // We keep track of the count, and label displaying the count:
     private int count = 0;
